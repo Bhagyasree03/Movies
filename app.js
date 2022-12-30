@@ -12,7 +12,7 @@ const initializeDbAndServer = async () => {
       filename: databasePath,
       driver: sqlite3.Database,
     });
-    app.Listen(3000, () =>
+    app.listen(3000, () =>
       console.log("Server Running at http://localhost:3000/")
     );
   } catch (error) {
